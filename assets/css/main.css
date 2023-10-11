@@ -333,9 +333,11 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  /* max-height: 40px; */
   margin-right: 6px;
   margin-bottom: 0.5rem !important;
+  width: 150px;
+  height: 90px;
 }
 
 .header .logo h1 {
@@ -1290,6 +1292,10 @@ footer .container {
   flex-direction: column;
   padding: 0;
 }
+footer .container div a .logo-footer{
+  width: 100%;
+  height: 150px;
+}
 
 footer .container h2 {
   color: var(--color-info);
@@ -1394,10 +1400,22 @@ footer .container .footer-nav {
   margin: 0 auto;
 }
 
+
+.about .container .video-about{
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 5px;
+}
+
 @media (min-width: 768px) {
   .about .about-left {
     width: 70%;
   }
+}
+
+.about .container .video-about{
+  width: 100%; 
+  height: auto;
 }
 
 .about-left::-webkit-scrollbar {
