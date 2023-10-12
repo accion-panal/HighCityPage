@@ -31,7 +31,7 @@ let updatedImages = data.images.map(function (image) {
  updatedImages.forEach((image, index) => {
      img += `
          <li class="splide__slide ${index === 0 ? 'active' : ''}">
-             <img src="${image || 'img/Sin.png'}" style="height: 600px; width: 100%;" />
+             <img src="${image || 'img/Sin.png'}" style="height: 600px; width: 100%;object-fit:cover" />
          </li>
      `;
  });
@@ -39,7 +39,7 @@ let updatedImages = data.images.map(function (image) {
 
  let splide = new Splide('.splide', {
      type: 'fade',
-     padding: '5rem',
+     padding: '2rem',
      rewind: true,
      autoplay: 'play',
  });
@@ -65,17 +65,17 @@ document.getElementById('caracteristica-prop').innerHTML =
     <thead>
         <tr>
             <th scope="col">Tipo de Propiedad</th>
-            <th scope="col">${data.types}</th>
+            <th scope="col">${data?.types}</th>
         </tr>
         <tr>
         <th scope="col">Código de propiedad</th>
-        <th scope="col">${data.id}</th>
+        <th scope="col">${data?.id}</th>
     </tr>
     </thead>
     <tbody>
         <tr>
             <th scope="row">M²</th>
-            <td><b> ${data.surface_m2 != null && data.surface_m2 != undefined && data.surface_m2 != "" ? data.surface_m2 : "0"}</b></td>
+            <td><b> ${data?.surface_m2 != null && data?.surface_m2 != undefined && data?.surface_m2 != "" ? data?.surface_m2 : "0"}</b></td>
         </tr>
         <tr>
             <th scope="row">Habitaciones</th>
@@ -107,7 +107,7 @@ ${data.description != null && data.description != undefined && data.description 
 document.getElementById('realtor-info').innerHTML = `
 <div class="position-relative text-center" style="margin-top:96px">
     <img
-    src="${data?.realtor.img || "assets/img/Sin.png"}"
+    src="${data?.realtor.img || "assets/img/logo/Logo High City - Vectorisado.png"}"
     class="rounded-circle w-50"
     alt="Cinque Terre"
     />

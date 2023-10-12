@@ -23,16 +23,29 @@
   --bg-secundary-opacity: #0c0c0c62;
 
   /* Colores variables */
-  --color-primary: #000000;
+  /* --color-primary: #000000;
   --color-secundary: #ffffff;
   --color-info: #3d3d3d;
-  --color-success: #58fa00;
+  --color-success: #58fa00; */
+
+
+    /* Colores variables */
+    --color-primary: #130060;
+    --color-secundary: #d19105;
+    --color-info: #3d3d3d;
+    --color-success: #2098d1;
 
   /* Colores variables opacity*/
-  --color-primary-opacity: #000000d5;
+    --color-primary-opacity: #000000d5;
+    --color-secundary-opacity: #E8A20Cd5;
+    --color-info-opacity: #3d3d3dd5;
+    --color-success-opacity: #2098d1d5;
+
+  /* Colores variables opacity*/
+  /* --color-primary-opacity: #000000d5;
   --color-secundary-opacity: #ffffffd5;
   --color-info-opacity: #0093cdd5;
-  --color-success-opacity: #58fa00d5;
+  --color-success-opacity: #58fa00d5; */
 
 
   /* Font size */
@@ -64,12 +77,12 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-info);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--text-primary);
+  color: var(--text-dark);
   text-decoration: none;
 }
 
@@ -243,12 +256,12 @@ section {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--color-secondary);
+  color: var(--text-white);
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background: var(--color-primary-opacity);
+  background: var(--color-secundary);
   color: #fff;
 }
 
@@ -407,7 +420,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-secundary);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -620,6 +633,7 @@ section {
   border-radius: 10px;
   color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 200px !important;
 }
 
 .filter-search .container button {
@@ -646,9 +660,13 @@ section {
 
 }
 
+.filter-search .container .btn-circle{
+  padding: 8px 20px;
+  color: var(--text-white) !important;
+}
 @media (max-width: 762px) {
   .filter-search .container {
-    margin-top: 220px;
+    margin-top: 330px !important;
     padding: 10px 1.6rem;
     height: 540px;
     width: 110%;
@@ -666,7 +684,7 @@ section {
 
 @media (max-width: 668px) {
   .filter-search .container {
-    margin-top: 290px;
+    margin-top: 340px !important;
     padding: 10px 1.6rem;
     height: 540px;
     width: 110%;
@@ -676,7 +694,7 @@ section {
 
 @media (max-width: 472px) {
   .filter-search .container {
-    margin-top: 200px;
+    margin-top: 280px !important;
     padding: 100px 1.6rem;
     height: 540px;
     width: 110%;
@@ -689,6 +707,16 @@ section {
     width: 100%;
     height: 34px;
     font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .filter-search .container {
+    margin-top: 360px !important;
+    padding: 100px 1.6rem;
+    height: 540px;
+    width: 110%;
+    font-size: 12px;
+  
   }
 }
 
@@ -786,6 +814,10 @@ section {
   background-color: whitesmoke;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.icons{
+  color: var(--color-secundary);
 }
 
 .card-props {
@@ -931,6 +963,10 @@ section {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services .title-services{
+  color: var(--text-white);
+  letter-spacing: 1px;
+}
 .services .service-item {
   padding: 40px;
   height: 100%;
@@ -1110,7 +1146,7 @@ section {
 
 @media (min-width: 768px) {
   .hero .carousel {
-    height: 60vh;
+    height: 75vh;
   }
 }
 
@@ -1240,7 +1276,13 @@ section {
 
 @media (min-width: 472px) {
   .hero .carousel {
-    height: 70vh;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 375px) {
+  .hero .carousel {
+    height: 82vh;
   }
 }
 /*--------------------------------------------------------------
@@ -1676,6 +1718,13 @@ footer .container .footer-nav {
   font-weight: 600;
   color: rgb(0, 0, 0);
 }
+.property .operation-section-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
 .property .title-section-item {
   display: flex;
@@ -1705,6 +1754,17 @@ footer .container .footer-nav {
     width: 100%;
   }
 }
+
+@media (min-width: 345px) {
+  .property .title-section-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 
 .property .container h1 {
   font-size: 1.5rem;
@@ -1766,6 +1826,17 @@ footer .container .footer-nav {
   border-radius: 20px;
 }
 
+.bg-operation{
+  background-color: var(--color-secundary);
+  border-radius: 5px;
+  color: var(--text-white);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  padding:5px 9px;
+  
+}
 /*--------------------------------------------------------------
 # Pagination
 --------------------------------------------------------------*/

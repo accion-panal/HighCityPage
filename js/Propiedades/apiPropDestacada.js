@@ -36,7 +36,7 @@ export default async function apiDestCall() {
                       alt=""
                   /></a>
                   <div
-                    class="bg-dark rounded text-white position-absolute end-0 top-0 m-4 py-1 px-3"
+                    class="bg-operation"
                   >
                     ${data.operation}
                   </div>

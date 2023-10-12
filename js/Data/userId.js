@@ -69,4 +69,5 @@ export const SocialRedes={
     facebok: "https://www.facebook.com/profile.php?id=100094186085245&mibextid=LQQJ4d",
     instagram: "https://instagram.com/nandy.highcitypropiedades?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
     tiktok: "https://www.tiktok.com/@highcitypropiedades?_t=8gOoOBdxqvl&_r=1",
+    allmyLinks:"https://allmylinks.com/highcity-propiedades"
 }

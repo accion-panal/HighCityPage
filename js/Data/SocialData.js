@@ -26,5 +26,13 @@ const loadInformation=()=>{
         ><i class="bi bi-tiktok"></i></a>
         `;
     }
+    let moreLinkSocial = document.getElementById("moreLinkSocial");
+    if (moreLinkSocial !== null){
+        moreLinkSocial.innerHTML = `
+        <a class="btn btn-dark btn-circle btn-sm" href="${SocialRedes.allmyLinks}" target="_blank"
+        ><i class="bi bi-pin-angle"></i>
+        </a>
+        `;
+    }
 }
 loadInformation();
