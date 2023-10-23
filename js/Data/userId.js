@@ -1,13 +1,13 @@
-export const PropertyData = {CodigoUsuarioMaestro: 0, companyId: 1, realtorId:0};
+export const PropertyData = {CodigoUsuarioMaestro: 10075, companyId: 20090, realtorId:0};
 
 
 export const limitDataApi = { limit:6, limitMap: 99 };
 
 
 export const RealtorSendEmailData = {
-    sendEmail: 'nicolascabreramillacan@gmail.com',  /* SendEmail.js */
-    detail: 'nicolascabreramillacan@gmail.com',     /* SendEmailDetail.js */
-    public: 'nicolascabreramillacan@gmail.com',     /* SendEmailPublic.js */
+    sendEmail: 'highcity@unne.cl',  /* SendEmail.js */
+    detail: 'highcity@unne.cl',     /* SendEmailDetail.js */
+    public: 'highcity@unne.cl',     /* SendEmailPublic.js */
 };
 
 export const AboutInformation = {
