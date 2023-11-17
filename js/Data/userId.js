@@ -11,16 +11,16 @@ export const RealtorSendEmailData = {
 };
 
 export const AboutInformation = {
-    mision: 'Nuestra prioridad es brindar un servicio de calidad con lo que nos carcateriza, eficiencia, seguridad, confianza y rapidez. Logrando fidelizar a nuestros clientes a traves del tiempo como se ha logrado hasta el momento.',
-    vision: 'Lograr fidelizar a nuestros clientes a traves del tiempo. Ser una empresa reconocida en el mercado como eficiente e innovadora.',
-    imageVisionMision: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1687403791/constructions-4_knczun.jpg',
+    mision: 'Nuestra prioridad es brindar un servicio de calidad con  nuestras  características, eficiencia, seguridad, confianza y rapidez. Logrando fidelizar a nuestros clientes a través del tiempo como se ha logrado hasta el momento.',
+    vision: 'Lograr fidelizar a nuestros clientes a través del tiempo. Ser una empresa reconocida en el mercado por nuestro servicios proactivo y eficaz a corto plazo.',
+    imageVisionMision: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1700247200/Projects/highcityImg/MisionCasaImg_iugab9.webp',
 }
 
 
 export const AboutHead = {
     imageHead: 'https://res.cloudinary.com/dvdb33uyj/image/upload/v1687403791/constructions-4_knczun.jpg',
-    text1: 'Somos una empresa de profesionales expertos inmobiliarios, con mas de 8 años de experiencia reconocidos y enfocados en ofrecer soluciones integrales en el rubro de bienes raices, reconocidos por nuestros clientes, satisfechos por la eficiacia en nuestros servicios',
-    text2: 'Nuestra Prioridad es brindar un servicio de calidad, con nuestras carácteristicas Confianza, seguridad, transparencia y rapidez.',
+    text1: 'Somos una empresa de profesionales expertos inmobiliarios, con más de 8 años de experiencia reconocidos y enfocados en ofrecer Servicios integrales en el rubro de bienes raíces, reconocidos por nuestros clientes satisfechos por la eficiencia y eficacia en nuestros servicios.',
+    // text2: 'Nuestra Prioridad es brindar un servicio de calidad, con nuestras carácteristicas Confianza, seguridad, transparencia y rapidez.',
     // text3: 'DATA-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae, voluptatum, quod, voluptas quibusdam voluptates quidem voluptatibus quos quia quas dolorum. Quisquam, quae. Quisquam quibusdam, quae quod voluptatum quas.',
 }
 
@@ -48,19 +48,29 @@ export const servicesInformation = {
     cards:[{
         id:1,
         icon:'<i class="fa-sharp fa-solid fa-house-circle-check"></i>',
-        title:'ASESORÍA BANCARIA',
+        title:'Compra y venta de Propiedades.',
     },{
         id:2,
         icon:'<i class="fa-sharp fa-solid fa-handshake-simple"></i>',
-        title:'PUBLICA CON NOSOTROS',
+        title:'Arriendos en general.',
     },{
         id:3,
-        icon:'<i class="fa-sharp fa-solid fa-file-contract"></i>',
-        title:'ADMINISTRACIÓN DE ARRRIENDO',
+        icon:'<i class="fa-solid fa-briefcase"></i>',
+        title:'Administración de propiedades.',
     },{
         id:4,
+        icon:'<i class="fa-solid fa-gavel"></i>',
+        title:'Asesorías Legales especialistas en el rubro inmobiliario.',
+    },
+    {
+        id:5,
         icon:'<i class="fa-sharp fa-solid fa-file-signature"></i>',
-        title:'SERVICIOS LEGALES',
+        title:'Trabajos de Servicios Generales (Maestros Calificados SEC).',
+    },
+    {
+        id:6,
+        icon:'<i class="fa-solid fa-compass-drafting"></i>',
+        title:'Servicios de Arquitectura y diseños de Interiores.',
     },
 ]
 }
